@@ -8,7 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "echo \"Ready to publish to NPM\""
+    "prepublishOnly": "echo \"Ready to publish to NPM\"",
+    "dev:install": "node scripts/dev-install.js",
+    "dev:config": "node bin/mcp-process-image.js config",
+    "dev:status": "node bin/mcp-process-image.js status",
+    "dev:uninstall": "node bin/mcp-process-image.js uninstall",
+    "dev:start": "node bin/mcp-process-image.js start"
   },
   "keywords": [
     "mcp",
