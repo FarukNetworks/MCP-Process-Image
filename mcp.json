@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-process-image": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "mcp_process_image.server"],
+      "cwd": "/Users/farukdelic/Desktop/symphony/projects/mcp-process-image",
+      "env": {
+        "PYTHONPATH": "/Users/farukdelic/Desktop/symphony/projects/mcp-process-image/src"
+      }
+    }
+  }
+}
