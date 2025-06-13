@@ -29,8 +29,8 @@ node bin/mcp-process-image.js --help
 2. **Update package.json with your GitHub URL**:
 
    ```bash
-   # Replace "yourusername" with your actual GitHub username
-   sed -i 's/yourusername/YOUR_GITHUB_USERNAME/g' package.json
+   # Replace "FarukNetworks" with your actual GitHub username
+   sed -i 's/FarukNetworks/YOUR_GITHUB_USERNAME/g' package.json
    ```
 
 3. **Initialize Git and push to GitHub**:
@@ -39,7 +39,7 @@ node bin/mcp-process-image.js --help
    git add .
    git commit -m "Initial commit: MCP Process Image NPX package"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/mcp-process-image.git
+   git remote add origin https://github.com/FarukNetworks/mcp-process-image.git
    git push -u origin main
    ```
 
@@ -57,13 +57,13 @@ node bin/mcp-process-image.js --help
    npm view mcp-process-image
    ```
 
-   If the package exists, you'll need to choose a different name or scope it (e.g., `@yourusername/mcp-process-image`).
+   If the package exists, you'll need to choose a different name or scope it (e.g., `@FarukNetworks/mcp-process-image`).
 
 3. **Update package name if needed**:
    Edit `package.json` and change the name field:
    ```json
    {
-     "name": "@yourusername/mcp-process-image",
+     "name": "@FarukNetworks/mcp-process-image",
      ...
    }
    ```
@@ -155,7 +155,7 @@ npx mcp-process-image install --openai-key sk-test-key-for-testing
 
 1. **Package name already exists**:
 
-   - Use a scoped package: `@yourusername/mcp-process-image`
+   - Use a scoped package: `@FarukNetworks/mcp-process-image`
    - Choose a different name
 
 2. **NPM publish fails**:

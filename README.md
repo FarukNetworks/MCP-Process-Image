@@ -62,7 +62,7 @@ pip install mcp-process-image
 ### Development Installation
 
 ```bash
-git clone https://github.com/yourusername/mcp-process-image.git
+git clone https://github.com/FarukNetworks/mcp-process-image.git
 cd mcp-process-image
 uv sync --all-extras --dev
 ```
