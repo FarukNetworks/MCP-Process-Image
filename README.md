@@ -64,8 +64,16 @@ pip install mcp-process-image
 ```bash
 git clone https://github.com/FarukNetworks/mcp-process-image.git
 cd mcp-process-image
-uv sync --all-extras --dev
+npm install
+
+# Install MCP server in development mode
+npm run dev:install -- --openai-key sk-your-openai-api-key
+
+# Or use the development script directly
+node scripts/dev-install.js --openai-key sk-your-openai-api-key
 ```
+
+**Note**: When working with the cloned repository, use the development commands instead of `npx mcp-process-image`. See [DEVELOPMENT.md](DEVELOPMENT.md) for detailed instructions.
 
 ## NPX Commands
 
