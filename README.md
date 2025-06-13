@@ -16,19 +16,19 @@ Navigate to the MCP-Process-Image folder
 cd MCP-Process-Image
 ```
 
-# Step 2: Install dependencies
+## STEP 2: Install dependencies
 
 ```
 npm install
 ```
 
-# Step 3: Install the development environment
+## STEP 3: Install the development environment
 
 ```
 npm run dev:install -- --openai-key YOUR_KEY_HERE
 ```
 
-# Step 4: Add MCP to your mcp agent configuration
+## STEP 4: Add MCP to your mcp agent configuration
 
 Get the mcp.json file
 
