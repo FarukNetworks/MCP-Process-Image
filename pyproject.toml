@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.8.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-process-image"
+version = "0.1.0"
+description = "MCP server for processing images using various AI vision APIs"
+authors = [
+    {name = "MCP Image Processor", email = "dev@example.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "pillow>=10.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+    "anthropic>=0.25.0",
+    "google-cloud-vision>=3.4.0",
+    "azure-cognitiveservices-vision-computervision>=0.9.0",
+    "tenacity>=8.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.10.0",
+    "ruff>=0.1.0",
+    "pyright>=1.1.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+mcp-process-image = "mcp_process_image.server:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.pyright]
+include = ["src"]
+exclude = ["tests"]
+pythonVersion = "3.10"
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=src --cov-report=term-missing" 

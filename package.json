@@ -1,0 +1,58 @@
+{
+  "name": "mcp-process-image",
+  "version": "1.0.0",
+  "description": "MCP server for processing images using various AI vision APIs - NPX installable",
+  "main": "bin/mcp-process-image.js",
+  "bin": {
+    "mcp-process-image": "./bin/mcp-process-image.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo \"Ready to publish to NPM\"",
+    "dev:install": "node scripts/dev-install.js",
+    "dev:config": "node bin/mcp-process-image.js config",
+    "dev:status": "node bin/mcp-process-image.js status",
+    "dev:uninstall": "node bin/mcp-process-image.js uninstall",
+    "dev:start": "node bin/mcp-process-image.js start"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "image-processing",
+    "ai",
+    "vision",
+    "openai",
+    "claude",
+    "anthropic"
+  ],
+  "author": "MCP Image Processor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarukNetworks/mcp-process-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FarukNetworks/mcp-process-image/issues"
+  },
+  "homepage": "https://github.com/FarukNetworks/mcp-process-image#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.1.1",
+    "cross-spawn": "^7.0.3"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    "src/",
+    "pyproject.toml",
+    "README.md",
+    "LICENSE"
+  ]
+}
